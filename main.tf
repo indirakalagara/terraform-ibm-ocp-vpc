@@ -133,7 +133,7 @@ resource "ibm_iam_authorization_policy" "policy" {
 
 resource ibm_container_vpc_cluster cluster {
   count = !var.exists ? 1 : 0
-  depends_on = [null_resource.print_resources, ibm_iam_authorization_policy.policy]
+  #depends_on = [null_resource.print_resources, ibm_iam_authorization_policy.policy]
 
   name              = local.cluster_name
   vpc_id            = local.vpc_id
