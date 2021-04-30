@@ -92,7 +92,7 @@ variable "cos_id" {
 variable "kms_enabled" {
   type        = bool
   description = "Flag indicating that kms encryption should be enabled for this cluster"
-  default     = false
+  default     = true
 }
 
 variable "kms_id" {
